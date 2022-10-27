@@ -1,0 +1,34 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Todo {
+  id: String!
+  content: String!
+  done: Boolean!
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+"""Date custom scalar type"""
+scalar Date
+
+type Query {
+  todos(input: TodoArgs!): [Todo!]!
+  todo(id: ID!): Todo!
+}
+
+input TodoArgs {
+  page: Int!
+  limit: Int!
+  content: String
+}
+
+type Mutation {
+  createTodo(input: CreateTodoArgs!): Todo!
+  removeTodo(id: ID!): String!
+}
+
+input CreateTodoArgs {
+  content: String!
+}
