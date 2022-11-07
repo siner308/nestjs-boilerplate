@@ -1,21 +1,8 @@
-import { ArgsType, Field, InputType, Int } from "@nestjs/graphql";
-import { IsPositive } from "class-validator";
-import { Optional } from "@nestjs/common";
-
+import { Field, InputType } from '@nestjs/graphql';
+import { PaginationArgs } from '../../common/args/page.args';
 
 @InputType()
-export abstract class PaginationArgs {
-  @Field(() => Int)
-  @IsPositive()
-  page: number;
-
-  @Field(() => Int)
-  @IsPositive()
-  limit: number;
-}
-
-@InputType()
-export class TodoArgs extends PaginationArgs {
+export class TodoPageArgs extends PaginationArgs {
   @Field({ nullable: true })
   content?: string;
 }

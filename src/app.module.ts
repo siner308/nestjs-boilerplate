@@ -1,20 +1,32 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TodoModule } from "./modules/todo/todo.module";
-import { GraphQLModule } from "@nestjs/graphql";
-import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
-import { env } from "./env";
-import { DateScalar } from "./common/scalars/date.scalar";
+import { TodoModule } from './modules/todo/todo.module';
+import { GraphQLModule } from '@nestjs/graphql';
+import { ApolloDriver } from '@nestjs/apollo';
+import { DateScalar } from './common/scalars/date.scalar';
+import { DatabaseModule } from './modules/database/database.module';
+import { GqlModuleOptions } from '@nestjs/graphql/dist/interfaces/gql-module-options.interface';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { env } from './env';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+    DatabaseModule,
     TodoModule,
-    GraphQLModule.forRoot<ApolloDriverConfig>({
+    GraphQLModule.forRootAsync<GqlModuleOptions>({
       driver: ApolloDriver,
-      debug: env.debug,
-      playground: env.debug,
-      autoSchemaFile: 'src/schema.gql',
+      inject: [ConfigService],
+      useFactory: async (configService: ConfigService) => {
+        return {
+          debug: configService.get(env.debug),
+          // playground: env.debug,
+          autoSchemaFile: 'src/schema.gql',
+        };
+      },
     }),
   ],
   controllers: [AppController],

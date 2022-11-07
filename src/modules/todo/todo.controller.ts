@@ -1,5 +1,5 @@
 import { TodoFilter, TodoService } from "./todo.service";
-import { Controller, Delete, Get, Param, Query } from "@nestjs/common";
+import { Controller, Delete, Get, Param, ParseIntPipe, Query } from "@nestjs/common";
 import { query } from "express";
 import { Todo } from "./todo.entity";
 
@@ -9,7 +9,7 @@ export class TodoController {
   }
 
   @Get("/")
-  findAll(
+  async findAll(
     @Query('content') content: string,
     @Query('page', {
       transform: (value: string) => value && Number(value),
@@ -17,7 +17,7 @@ export class TodoController {
     @Query('limit', {
       transform: (value: string) => value && Number(value),
     }) limit: number,
-  ): Todo[] {
+  ): Promise<Todo[]> {
     return this.todoService.findAll({
       content,
       page,
@@ -26,15 +26,13 @@ export class TodoController {
   }
 
   @Get("/:id")
-  findById(@Param("id") id: string) {
-    return this.todoService.findById(id);
+  async findById(@Param("id", new ParseIntPipe()) id: number) {
+    return this.todoService.findById(Number(id));
   }
 
   @Delete("/:id")
-  remove(@Param("id") id: string) {
-    this.todoService.removeById(id);
-    return {
-      result: "OK"
-    };
+  async remove(@Param("id", new ParseIntPipe()) id: number) {
+    await this.todoService.removeById(id);
+    return "OK";
   }
 }

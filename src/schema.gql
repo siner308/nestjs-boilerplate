@@ -2,19 +2,32 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type Todo {
-  id: String!
-  content: String!
-  done: Boolean!
+type User {
+  id: ID!
   createdAt: Date!
   updatedAt: Date!
+  name: String!
+  todos: [Todo!]!
+}
+
+type Todo {
+  id: ID!
+  createdAt: Date!
+  updatedAt: Date!
+
+  """컨텐츠"""
+  content: String @deprecated(reason: "안쓸래")
+  done: Boolean!
+  user: User!
+  summary: String!
+  summary2: String!
 }
 
 """Date custom scalar type"""
 scalar Date
 
 type Query {
-  todos(input: TodoArgs!): [Todo!]!
+  todos(input: TodoArgs!): [Todo!]! @deprecated(reason: "테스트")
   todo(id: ID!): Todo!
 }
 
@@ -25,6 +38,7 @@ input TodoArgs {
 }
 
 type Mutation {
+  """'에러'를 문자열에 넣으면 에러를 발생시킬 수 있음."""
   createTodo(input: CreateTodoArgs!): Todo!
   removeTodo(id: ID!): String!
 }

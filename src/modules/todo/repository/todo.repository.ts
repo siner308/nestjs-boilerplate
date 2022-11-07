@@ -1,44 +1,43 @@
-import { Todo } from "../todo.entity";
-import { v4 as uuid } from "uuid";
-import { TodoFilter } from "../todo.service";
+import { Todo } from '../todo.entity';
+import { Repository, SelectQueryBuilder } from 'typeorm';
+import { TodoPageArgs } from '../todo.dto';
 
 export class TodoRepository {
-  private data: Todo[];
+  constructor(private readonly repository: Repository<Todo>) {}
 
-  constructor() {
-    this.data = [];
-    this.save(new Todo({ content: "청소" }));
-    this.save(new Todo({ content: "게임" }));
-    this.save(new Todo({ content: "공부" }));
-    this.save(new Todo({ content: "저녁식사" }));
-    this.save(new Todo({ content: "산책" }));
-    this.save(new Todo({ content: "등산" }));
-  }
-
-  findAll(query: TodoFilter): Todo[] {
+  async findAll(query: TodoPageArgs): Promise<Todo[]> {
     const { content, page, limit } = query;
-    let result = this.data;
-    if (content) result = result.filter((todo) => todo.content.includes(content));
-    if (page && limit) result = result.slice(limit * (page - 1), (limit * (page - 1)) + limit);
-    return result.sort((a, b) => b.updatedAt.getTime() - a.updatedAt.getTime());
+
+    const queryBuilder: SelectQueryBuilder<Todo> = this.repository
+      .createQueryBuilder('todo')
+      .where('1=1');
+
+    if (content) {
+      queryBuilder.andWhere('like.content like :contentLike', {
+        contentLike: `%${content}%`,
+      });
+    }
+
+    return queryBuilder
+      .skip(limit * (page - 1))
+      .take(limit)
+      .getMany();
   }
 
-  findById(id: string): Todo {
-    return this.data.find((todo) => todo.id === id);
+  async findById(id: number): Promise<Todo> {
+    return this.repository.findOne({
+      where: {
+        id,
+      },
+    });
   }
 
-  removeById(id: string): void {
-    this.data = this.data.filter((todo) => todo.id !== id);
+  async removeById(id: number): Promise<void> {
+    const todo = await this.findById(id);
+    await this.repository.remove(todo);
   }
 
-  save(todo: Todo): Todo {
-    const now = new Date();
-    if (!todo.id) todo.id = uuid();
-    if (!todo.createdAt) todo.createdAt = now;
-    if (todo.done === undefined) todo.done = false;
-    todo.updatedAt = now;
-    this.data.push(todo); // insert into database
-    this.data = this.data.sort((a, b) => b.updatedAt.getTime() - a.updatedAt.getTime());
-    return todo;
+  async save(todo: Todo): Promise<Todo> {
+    return this.repository.save(todo);
   }
 }
