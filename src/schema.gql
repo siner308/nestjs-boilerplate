@@ -27,11 +27,11 @@ type Todo {
 scalar Date
 
 type Query {
-  todos(input: TodoArgs!): [Todo!]! @deprecated(reason: "테스트")
+  todos(input: TodoPageArgs!): [Todo!]! @deprecated(reason: "테스트")
   todo(id: ID!): Todo!
 }
 
-input TodoArgs {
+input TodoPageArgs {
   page: Int!
   limit: Int!
   content: String

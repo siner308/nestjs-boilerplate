@@ -1,22 +1,29 @@
-import { TodoFilter, TodoService } from "./todo.service";
-import { Controller, Delete, Get, Param, ParseIntPipe, Query } from "@nestjs/common";
-import { query } from "express";
-import { Todo } from "./todo.entity";
+import { TodoService } from './todo.service';
+import {
+  Controller,
+  Delete,
+  Get,
+  Param,
+  ParseIntPipe,
+  Query,
+} from '@nestjs/common';
+import { Todo } from './todo.entity';
 
-@Controller("todo")
+@Controller('todo')
 export class TodoController {
-  constructor(private readonly todoService: TodoService) {
-  }
+  constructor(private readonly todoService: TodoService) {}
 
-  @Get("/")
+  @Get('/')
   async findAll(
     @Query('content') content: string,
     @Query('page', {
       transform: (value: string) => value && Number(value),
-    }) page: number,
+    })
+    page: number,
     @Query('limit', {
       transform: (value: string) => value && Number(value),
-    }) limit: number,
+    })
+    limit: number,
   ): Promise<Todo[]> {
     return this.todoService.findAll({
       content,
@@ -25,14 +32,14 @@ export class TodoController {
     });
   }
 
-  @Get("/:id")
-  async findById(@Param("id", new ParseIntPipe()) id: number) {
+  @Get('/:id')
+  async findById(@Param('id', new ParseIntPipe()) id: number) {
     return this.todoService.findById(Number(id));
   }
 
-  @Delete("/:id")
-  async remove(@Param("id", new ParseIntPipe()) id: number) {
+  @Delete('/:id')
+  async remove(@Param('id', new ParseIntPipe()) id: number) {
     await this.todoService.removeById(id);
-    return "OK";
+    return 'OK';
   }
 }

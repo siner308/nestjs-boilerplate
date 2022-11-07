@@ -9,6 +9,8 @@ import { DatabaseModule } from './modules/database/database.module';
 import { GqlModuleOptions } from '@nestjs/graphql/dist/interfaces/gql-module-options.interface';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { env } from './env';
+import { KeycloakConnectModule } from 'nest-keycloak-connect';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -17,6 +19,7 @@ import { env } from './env';
     }),
     DatabaseModule,
     TodoModule,
+    AuthModule,
     GraphQLModule.forRootAsync<GqlModuleOptions>({
       driver: ApolloDriver,
       inject: [ConfigService],
