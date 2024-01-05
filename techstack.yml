@@ -1,7 +1,8 @@
 repo_name: siner308/nestjs-boilerplate
 report_id: 607a8483a9925ce58e324a69ae21275c
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-15T10:20:52+00:00'
+timestamp: '2024-01-05T08:40:26+00:00'
 requested_by: siner308
 provider: github
 branch: main
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate
   detection_source: Repo Metadata
 - name: TypeScript
   description: A superset of JavaScript that compiles to clean JavaScript output
@@ -26,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate
   detection_source: Repo Metadata
 - name: ExpressJS
   description: Sinatra inspired web development framework for node.js -- insanely
@@ -38,7 +41,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/1163/hashtag.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 11:58:48.000000000 Z
@@ -53,7 +56,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/8747/4zsOyxko_400x400.jpg
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -66,6 +69,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/package.json
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -78,7 +82,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Concurrency Frameworks
   image_url: https://img.stackshare.io/service/1796/984368.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -92,7 +96,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/7419/20165699.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -104,6 +108,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Query Languages
   image_url: https://img.stackshare.io/service/3820/12972006.png
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/package.json
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 11:58:48.000000000 Z
@@ -116,7 +121,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1025/logo-mysql-170x170.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -129,6 +134,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Server Configuration and Automation
   image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/package.json
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -141,6 +147,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/package.json
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -152,6 +159,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate
   detection_source: Repo Metadata
 - name: Jest
   description: Painless JavaScript Unit Testing
@@ -163,7 +171,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Javascript Testing Framework
   image_url: https://img.stackshare.io/service/830/jest.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -177,7 +185,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -191,7 +199,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Javascript Testing Framework
   image_url: https://img.stackshare.io/no-img-open-source.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -203,6 +211,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: yarn.lock
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -214,6 +223,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/package.json
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -226,6 +236,7 @@ tools:
   category: Application Hosting
   sub_category: Platform as a Service
   image_url: https://img.stackshare.io/service/5508/CyUH653y.png
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/package.json
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 11:58:48.000000000 Z
@@ -238,6 +249,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate
   detection_source: Repo Metadata
 - name: date-fns
   description: Modern JavaScript date utility library
@@ -248,6 +260,7 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/10865/default_5551fb8853689f607a2bc0d5a09355d5a3d52bf0.png
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/package.json
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 11:58:48.000000000 Z
@@ -261,7 +274,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16950/default_ebf16e0c8af5e95030933d9e01479224b6665289.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 09:29:23.000000000 Z
@@ -275,7 +288,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17223/default_48f040bdc5f6c639c70bf350f8b8158ede27286c.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 09:29:23.000000000 Z
@@ -289,7 +302,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17855/default_dc034f75f103514d23b4d1a7fe578415d63216ee.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 09:29:23.000000000 Z
@@ -303,7 +316,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16809/default_9a5182350af29cb82b3344853e865051f508ac6c.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -317,7 +330,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16100/default_d947c1690e032a288145c7e2491999eab3ea8ede.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -331,7 +344,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15840/default_004658cda9b38934f2871435e9dc15608c86e8be.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -345,7 +358,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -359,7 +372,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16805/default_31a4e0e11d348225088320f3a5c5ea6fa49c27ad.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -373,7 +386,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16257/default_ab17554b7e80af3d234b14168ed61e75d43f8eee.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -387,7 +400,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -401,7 +414,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -415,7 +428,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17501/default_1d2902e8f9c84259702671591379572493b9009b.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 11:58:48.000000000 Z
@@ -430,7 +443,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17651/default_eb9caf7d7fb4d231f7e3b04a8c1fbef6fcd9fd73.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 11:58:48.000000000 Z
@@ -445,7 +458,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17583/default_661ab15cb9ea1663765f3e16ee70a1d2d50118d1.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 11:58:48.000000000 Z
@@ -466,7 +479,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 09:29:23.000000000 Z
@@ -480,7 +493,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -494,7 +507,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16019/default_7a88bebb451873cc63bd99007de5bd3bb8ef85de.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -508,7 +521,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -522,7 +535,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16028/default_c7b204838197013798409fa2b4dafce450edc7fb.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -537,7 +550,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15864/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -551,7 +564,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15938/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -565,7 +578,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
@@ -579,7 +592,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16810/default_55e3ea76a7929df1b71c5ea0c9b4130cc87323a4.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-11-07 02:38:38.000000000 Z
@@ -593,7 +606,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15916/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/siner308/nestjs-boilerplate/blob/main/yarn.lock
   detection_source: package.json
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 11:58:48.000000000 Z
