@@ -2,7 +2,7 @@ repo_name: siner308/nestjs-boilerplate
 report_id: 607a8483a9925ce58e324a69ae21275c
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:40:26+00:00'
+timestamp: '2024-02-29T18:47:17+00:00'
 requested_by: siner308
 provider: github
 branch: main
@@ -176,7 +176,7 @@ tools:
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 2.7.1
   license: MIT
@@ -190,7 +190,7 @@ tools:
   last_updated_by: jeonghyun.an
   last_updated_on: 2022-10-27 04:56:00.000000000 Z
 - name: SuperTest
-  description: 'A library for testing node.js HTTP servers '
+  description: A library for testing node.js HTTP servers
   website_url: https://www.npmjs.com/package/supertest
   version: 6.3.1
   license: MIT
